@@ -49,10 +49,10 @@ public class DigitsMainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.digits_activity_main);
-        final TextView userIdView = (TextView) findViewById(R.id.user_id);
-        final TextView tokenView = (TextView) findViewById(R.id.token);
-        final TextView secretView = (TextView) findViewById(R.id.secret);
-        clearSessionButton = (Button) findViewById(R.id.clear_session_button);
+        final TextView userIdView = findViewById(R.id.user_id);
+        final TextView tokenView = findViewById(R.id.token);
+        final TextView secretView =  findViewById(R.id.secret);
+        clearSessionButton = findViewById(R.id.clear_session_button);
         clearSessionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -87,7 +87,7 @@ public class DigitsMainActivity extends Activity {
         digitsAuthButton.setCallback(callback);
         digitsAuthButton.setAuthTheme(R.style.LightTheme);
 
-        verifyCredentialsButton = (Button) findViewById(R.id.verify_credentials_button);
+        verifyCredentialsButton =  findViewById(R.id.verify_credentials_button);
         verifyCredentialsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
